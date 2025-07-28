@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>📬 Contact Form</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #e8f0fe;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 450px;
+      margin: auto;
+      box-shadow: 0 0 12px rgba(0,0,0,0.15);
+    }
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    input[type="submit"] {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+    }
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <video class="bg-video" autoplay muted loop playsinline src="contactbg.4mp.mp4"></video>
+  <nav class="navbar">
+        <ul>
+          <a href="#" class="logo"> CONTACT US ✉️</a>
+        <li ><a href="index.html">HOME</a></li>
+        <div class="buttons"></div>
+           <li><a href="about.html">About</a></li>
+           <li><a href="skills.html">SKILLS</a></li>
+           <li><a href="certificate.html">CERTIFICATE</a></li>
+           <li class="active"><a href="contact.html">CONTACT</a></li>
+        </ul>
+        </nav><br><br><br><BR><BR>
+  <form onsubmit="showPopup(event)">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="text" id="phone" name="phone" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <script>
+    function showPopup(event) {
+      event.preventDefault();
+      const name = document.getElementById("name").value;
+      const phone = document.getElementById("phone").value;
+      const email = document.getElementById("email").value;
+      alert(`Thanks for contacting us, ${name}! 🎉\n📞 Phone: ${phone}\n📧 Email: ${email}`);
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,353 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+a{
+    color: rgb(111, 240, 12);
+    text-decoration: none;
+}
+.navbar {
+  position: fixed;
+  left: 0;
+  top:0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 90;
+}
+.navbar  .logo{
+    font-size: 60px;
+    font-weight: 100;
+    color: rgb(241, 8, 206);
+}
+.navbar ul{
+    display:flex;
+}
+.navbar ul li{
+    list-style: none;
+    margin-left: 50px;
+}
+.navbar ul li a{
+    font: 25px;
+    font-weight: 500;
+    transition: .5ms;
+}
+.navbar ul li:hover a,.navbar ul li.active a
+{
+    color: rgb(255, 0, 0);
+}
+body{
+    color:rgb(126, 183, 233);
+    background-color: black;
+}
+.header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:20px 10%;
+    background: transparent;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    color:bisque;
+}
+.logo{
+    position:relative;
+    font-size: 48px;
+    left:0px;
+    color:aqua;
+    text-decoration: none;
+    font-weight: 600;
+}
+.bg-video{
+    position:fixed;
+    top:0;
+    left:0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+.home-img .img-box{
+    position: relative;
+    top:110px;
+    left: 950px;
+    width:32vw;
+    height: 32vw;
+    border-radius:50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.home-img .img-box::before,
+.home-img .img-box::after{
+    content: '';
+    position:absolute;
+    top: 100px;;
+    width: 500px;
+    height: 500px;
+    background: conic-gradient(transparent,transparent,transparent,rgb(243, 134, 31));
+    transform: rotate(0deg);
+    animation:rotate-border 10s linear infinite;
+}
+.home-img .img-box::after{
+    animation-delay: -5s;
+}
+.home-img .img-box .img-item{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    background:rgb(0, 0, 0);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+   overflow: hidden;
+}
+
+.home-img .img-box .img-item img{
+    position:absolute;
+    width:32vw;
+    height:32vw;
+    display: block;
+    object-fit: cover;
+    mix-blend-mode: lighten;
+}
+@keyframes rotate-border {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.home{
+    position:absolute;
+    width:100%;
+    justify-content: space-between;
+    height: 100%;
+    background: url(Purple\ Illustrated\ Mountain\ Desktop\ Wallpaper.png) no-repeat;
+    background-size: cover;
+    display:flex;
+    background-position: center;
+    align-items: center;
+}
+.home-info h3{
+    font-size: 65px;
+    font-weight: 700;
+    left: 30px;
+}
+.home-info h1{
+    font-size: 75px;
+    font-weight: 700;
+    margin: -3px 0;
+    left: 30px;
+}
+.home-info .home-sci{
+    display:flex;
+    align-items: center;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    background: rgb(97, 230, 36);
+    color:red;
+    font-weight: 500;
+    border: 2px solid rgb(11, 106, 51);
+    border-radius: 40px;
+    box-shadow: 0 0 10px yellow;
+    transition: .5ms;
+}
+.btn:hover{
+    background: transparent;
+    color: yellow;
+}
+.Skills-section{
+    position: absolute;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+a{
+    color: rgb(111, 240, 12);
+    text-decoration: none;
+}
+.navbar {
+  position: fixed;
+  left: 0;
+  top:0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 90;
+}
+.navbar  .logo{
+    font-size: 60px;
+    font-weight: 100;
+    color: rgb(241, 8, 206);
+}
+.navbar ul{
+    display:flex;
+}
+.navbar ul li{
+    list-style: none;
+    margin-left: 50px;
+}
+.navbar ul li a{
+    font: 25px;
+    font-weight: 500;
+    transition: .5ms;
+}
+.navbar ul li:hover a,.navbar ul li.active a
+{
+    color: rgb(255, 0, 0);
+}
+body{
+    color:rgb(126, 183, 233);
+    background-color: black;
+}
+.header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:20px 10%;
+    background: transparent;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    color:bisque;
+}
+.logo{
+    position:relative;
+    font-size: 48px;
+    left:0px;
+    color:aqua;
+    text-decoration: none;
+    font-weight: 600;
+}
+.bg-video{
+    position:fixed;
+    top:0;
+    left:0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+.home-img .img-box{
+    position: relative;
+    top:110px;
+    left: 950px;
+    width:32vw;
+    height: 32vw;
+    border-radius:50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.home-img .img-box::before,
+.home-img .img-box::after{
+    content: '';
+    position:absolute;
+    top: 100px;
+    width: 500px;
+    height: 500px;
+    background: conic-gradient(transparent,transparent,transparent,rgb(243, 134, 31));
+    transform: rotate(0deg);
+    animation:rotate-border 10s linear infinite;
+
+}
+.home-img .img-box::after{
+    animation-delay: -5s;
+}
+.home-img .img-box .img-item{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    background:rgb(0, 0, 0);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+   overflow: hidden;
+}
+
+.home-img .img-box .img-item img{
+    position:absolute;
+    width:32vw;
+    height:32vw;
+    display: block;
+    object-fit: cover;
+    mix-blend-mode: lighten;
+}
+@keyframes rotate-border {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.home{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 60px 9% 0;
+    color: rgb(18, 208, 221);
+
+}
+.home-info h3{
+    font-size: 65px;
+    font-weight: 700;
+    left: 30px;
+}
+.home-info h1{
+    font-size: 75px;
+    font-weight: 700;
+    margin: -3px 0;
+    left: 30px;
+}
+.home-info .btn-sci{
+    display:flex;
+    align-items: center;
+}
+.btn{
+     display: inline-block;
+    padding: 10px 30px ;
+    background: rgb(97, 230, 36);
+    color:red;
+    font-weight: 500;
+    border: 2px solid rgb(11, 106, 51);
+    border-radius: 40px;
+    box-shadow: 0 0 10px yellow;
+    transition: .5s;
+}
+.btn:hover{
+    background: transparent;
+    color: yellow;
+}
+ .btn-sci{
+    position:absolute;
+    margin-left: 80px;
+    margin-top: 550px;
+}
+.home-info .btn-sci {
+    display: inline-flex;
+    padding: 8px;
+    border: 2px solid greenyellow;
+    border-radius: 50%;
+    font-size: 20px;
+    color: aquamarine;
+    margin: 0 8px;
+}
+.Skills-section{
+    position: absolute;
+}
